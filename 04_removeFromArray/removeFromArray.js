@@ -14,3 +14,7 @@ const removeFromArray = function(array, deleted) {
 
 // Do not edit below this line
 module.exports = removeFromArray;
+
+
+array = [1, 2, 3, 4]
+deleted = [3, 4]
