@@ -1,3 +1,4 @@
+/*
 const container = document.querySelector("#container");
 
 const redPara = document.createElement("p");
@@ -25,5 +26,29 @@ newPara.textContent = "ME TOO!"
 extra.appendChild(newPara);
 
 
+const buttons = document.querySelectorAll('button');
 
+// we use the .forEach method to iterate through each button
+buttons.forEach((button) => {
 
+  // and for each one we add a 'click' listener
+  button.addEventListener('click', () => {
+    alert(button.id);
+  });
+});
+*/
+
+const link = document.querySelector("a");
+link.textContent = "Mozilla Developer Network";
+link.href = "https://developer.mozilla.org";
+
+const sect = document.querySelector("section");
+const para = document.createElement("p");
+para.textContent = "We hope you enjoyed the ride.";
+sect.appendChild(para);
+const text = document.createTextNode(
+    " — the premier source for web development knowledge.",
+  );
+const linkPara = document.querySelector("p");
+linkPara.appendChild(text);
+sect.appendChild(linkPara);
